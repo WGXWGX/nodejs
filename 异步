@@ -1,0 +1,23 @@
+//异步文件
+var data1 = fs.readFile('file.txt','utf-8', function(err,data){
+	if(err){
+		console.log(err);
+	}else{
+		console.log(data);
+	}
+});
+console.log('end');
+//用js写的异步回调
+function lunch(food,drink,callback){
+	console.log('i am eating '+ food + drink);
+	if(callback && typeof(callback) === 'function'){
+		//callback();   
+		setTimeout(function(){
+			callback();
+		},3000);
+	}
+}
+lunch('toast','orange',function(){
+	console.log('over');
+})
+console.log('end');

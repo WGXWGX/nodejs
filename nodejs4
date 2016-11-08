@@ -10,13 +10,12 @@ fs.chmod(BASE_DIR+'/2.txt','777',function(err){
 	}
 })
 
-/*
 fs.rename(BASE_DIR+'/1.txt',BASE_DIR+'/2.txt',function(err){
 	if(err){
 		throw err;
 	}else{
 		console.log('success');
 	}
-});*/
+});
 
-//fs.chmod   ugo  user  group other 777
+

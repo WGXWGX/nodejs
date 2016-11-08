@@ -18,12 +18,9 @@ http.createServer(function(req,res){
 
 console.log('server is listening port 4000');
 
-
-
-/*
 http url dns fs querystring
 
 index.html--->加载到内存--->utf-8编码后的buffer--->打成数据包放入包体
 ---->返回给浏览器
 
-name=laoshan  {'name':'laoshan'}*/
+name=laoshan  {'name':'laoshan'}

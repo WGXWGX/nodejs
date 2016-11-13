@@ -39,5 +39,23 @@ exports.person={
 module.exports = {'arr' : ['wendy','john','susan']};
 exports.arr = ['a','b','c'];    arr就是那个对象
 两行代码的意思是一样的，运行时删掉注释
+4----------------
+测试
+var myPerson = require('./person.js');
+var myPerson1 = require('./person1.js');
+var myPerson2 = require('./person2.js');
 
+// for(var i=0;i<myPerson2.length;i++){
+// 	console.log(myPerson2[i]);
+// }
+
+// console.log(myPerson1);
+// myPerson1.person.eat();
+// myPerson1.person.say();
+
+
+// console.log(myPerson);
+// var person = new myPerson();
+// person.say();
+// person.eat();
 

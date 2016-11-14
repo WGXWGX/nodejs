@@ -25,3 +25,15 @@ var class1 = new class1();
 class1.showText();
 class1.aa();
 
+function class1(){
+	this.name = 'laoshan';
+	this.showText = function(){
+		console.log(this.name);
+	}
+}
+class1.prototype.aa = function() {//原型链的方法定义函数
+	console.log('aa');
+};
+var class1 = new class1();
+class1.showText();
+class1.aa();

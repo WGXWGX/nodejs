@@ -24,6 +24,20 @@ function router(req,res,pathname){
 			break;
 	}
 } 
+function getIndex(req,res){
+	var pathname = __dirname+ '/' + url.parse('index.html').pathname;
+	var indexPage = fs.readFileSync(pathname);
+	res.end(indexPage);  
+}
+function parseDNS(req,res){
+	var postData = '';
+	req.addListener('data',function(postDataChunk){
+		postData+=postDataChunk;
+		var retData = getDns(postData,function(domain,addresses){
+
+		});
+	});
+}
 
 
 

@@ -38,6 +38,14 @@ function parseDNS(req,res){
 		});
 	});
 }
+function getDns(postData,callback){
+	var domain = querystring.parse(postData).search_name;
+	dns.resolve4(domain,function(err,addresses){
+		if(!addresses){
+			addresses = 'no domain!';
+		}
+		callback(domain,addresses);
 
-
+	});
+}
 
